@@ -1,3 +1,32 @@
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #5846f9;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #7b27d8;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -50,15 +79,17 @@
   }
 }
 
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background-color: #262626;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: #262626;
+  background: rgba(24, 6, 185, 0.8);
   padding: 12px 0;
 }
 
@@ -74,7 +105,6 @@
 
 #header .logo a {
   color: #fff;
-  text-decoration: none;
 }
 
 #header .logo img {
@@ -141,7 +171,6 @@
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
-  text-decoration: none;
 }
 
 .nav-menu .drop-down ul {
@@ -220,6 +249,33 @@
   }
 }
 
+/* Get Started Button */
+.get-started-btn {
+  margin-left: 25px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.get-started-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .get-started-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+/* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;

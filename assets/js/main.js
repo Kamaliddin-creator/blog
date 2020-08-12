@@ -1,3 +1,9 @@
+/**
+* Template Name: Techie - v2.1.0
+* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 !(function($) {
   "use strict";
 
@@ -245,11 +251,11 @@ $("#send").on("click", function() {
       $("send").prop('disabled', true);
     },
     success: function(data) {
-      if(data == false) 
+      if(data === false) 
         alert("Были ошибки сообщение не отправлено.");
       else 
         $("#mail-form").trigger("reset");
-        
+        alert(data);
 
       $("send").prop('disabled', false);
     }
